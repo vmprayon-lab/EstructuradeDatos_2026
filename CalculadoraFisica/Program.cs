@@ -51,8 +51,9 @@ class Program
                     EntradaUsuario.PedirDouble(
                         "Tiempo (s): ");
 
-                double velocidad =
+                double velocidad = 0;
                     Calculos.CalcularVelocidad(
+                        ref velocidad,
                         distanciaMetros,
                         tiempoSegundos);
 
