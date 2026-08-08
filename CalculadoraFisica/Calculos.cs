@@ -5,6 +5,9 @@ namespace CalculadoraFisica;
 /// </summary>
 static class Calculos
 {
+    // TODO: Migrar CalcularVelocidad para usar ref.
+    // TODO: Migrar CalcularDistancia para usar out.
+    // TODO: Migrar CalcularTiempo para usar out.
 /// <summary>Calcula velocidad: v = d / t</summary>
 /// <param name="distanciaMetros">Distancia en metros</param>
 /// <param name="tiempoSegundos">Tiempo en segundos (> 0)</param>
