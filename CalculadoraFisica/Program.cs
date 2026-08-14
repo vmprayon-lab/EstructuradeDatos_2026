@@ -52,10 +52,11 @@ class Program
                         "Tiempo (s): ");
 
                 double velocidad = 0;
-                    Calculos.CalcularVelocidad(
-                        ref velocidad,
-                        distanciaMetros,
-                        tiempoSegundos);
+
+                Calculos.CalcularVelocidad(
+                    ref velocidad,
+                    distanciaMetros,
+                    tiempoSegundos);
 
                 Console.WriteLine(
                     $"\nVelocidad = {velocidad:F2} m/s");
@@ -71,10 +72,10 @@ class Program
                     EntradaUsuario.PedirDouble(
                         "Tiempo (s): ");
 
-                double distancia =
-                    Calculos.CalcularDistancia(
-                        velocidadMs,
-                        tiempoDistancia);
+                Calculos.CalcularDistancia(
+                    velocidadMs,
+                    tiempoDistancia,
+                    out double distancia);
 
                 Console.WriteLine(
                     $"\nDistancia = {distancia:F2} m");
@@ -90,10 +91,10 @@ class Program
                     EntradaUsuario.PedirDouble(
                         "Velocidad (m/s): ");
 
-                double tiempo =
-                    Calculos.CalcularTiempo(
-                        distanciaTiempo,
-                        velocidadTiempo);
+                Calculos.CalcularTiempo(
+                    distanciaTiempo,
+                    velocidadTiempo,
+                    out double tiempo);
 
                 Console.WriteLine(
                     $"\nTiempo = {tiempo:F2} s");

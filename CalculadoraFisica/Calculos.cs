@@ -20,17 +20,18 @@ double tiempoSegundos)
 velocidad = distanciaMetros / tiempoSegundos;
 }
 /// <summary>Calcula distancia: d = v * t</summary>
-public static double CalcularDistancia(
-double velocidadMs,
-double tiempoSegundos)
+public static void CalcularDistancia(
+    double velocidadMs,
+    double tiempoSegundos,
+    out double distancia)
 {
-return velocidadMs * tiempoSegundos;
-}
-/// <summary>Calcula tiempo: t = d / v</summary>
-public static double CalcularTiempo(
-double distanciaMetros,
-double velocidadMs)
+    distancia = velocidadMs * tiempoSegundos;
+}/// <summary>Calcula tiempo: t = d / v</summary>
+public static void CalcularTiempo(
+    double distanciaMetros,
+    double velocidadMs,
+    out double tiempo)
 {
-return distanciaMetros / velocidadMs;
+    tiempo = distanciaMetros / velocidadMs;
 }
 }
